@@ -80,7 +80,7 @@ label {
     margin-top: 2%;
     margin-bottom: 2%;
     align-self: center;
-    width: 50%;
+    width: 40%;
     animation-name: imgAppearance;
     animation-duration: 2s;
 }
@@ -90,7 +90,7 @@ label {
     margin-top: 2%;
     margin-bottom: 2%;
     align-self: center;
-    width: 50%;
+    width: 40%;
     animation-name: imgAppearance;
     animation-duration: 2s;
 }
@@ -100,7 +100,7 @@ label {
     margin-top: 2%;
     margin-bottom: 2%;
     align-self: center;
-    width: 50%;
+    width: 30%;
     animation-name: imgAppearance;
     animation-duration: 2s;
 }
@@ -156,7 +156,7 @@ label {
     }
 }
 
-@media (hover) {
+@media (hover: hover) {
 
     .bayanBlock:hover .plus_or_cross {
         opacity: 1;
