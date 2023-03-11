@@ -10,7 +10,8 @@ body {
 }
 
 .bayanBlock:hover .plus_or_cross {
-    display: block;
+    opacity: 1;
+    transition: all 1s;
 }
 
 .bayanBlock:hover {
@@ -80,6 +81,8 @@ label {
     margin-bottom: 2%;
     align-self: center;
     width: 50%;
+    animation-name: imgAppearance;
+    animation-duration: 2s;
 }
 
 .crazyfrog {
@@ -88,6 +91,8 @@ label {
     margin-bottom: 2%;
     align-self: center;
     width: 50%;
+    animation-name: imgAppearance;
+    animation-duration: 2s;
 }
 
 .cat {
@@ -96,6 +101,8 @@ label {
     margin-bottom: 2%;
     align-self: center;
     width: 50%;
+    animation-name: imgAppearance;
+    animation-duration: 2s;
 }
 
 .text {
@@ -105,13 +112,13 @@ label {
 }
 
 .plus_or_cross {
-    display: none;
     width: 2em;
     height: 2em;
     background-size: cover;
     background-image: url(assets/png/cross.png);
     align-self: center;
     transition: all 0.5s;
+    opacity: 0;
 }
 
 .plus_or_cross:hover {
@@ -147,4 +154,13 @@ label {
         width: 4em;
         height: 4em;
     }
+}
+
+@media (hover: none) and (pointer: coarse) {
+   
+}
+
+@keyframes imgAppearance {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
 }
