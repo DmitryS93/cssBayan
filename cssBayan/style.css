@@ -9,14 +9,14 @@ body {
     transition: all 1s;
 }
 
-.bayanBlock:hover .plus_or_cross {
+/*.bayanBlock:hover .plus_or_cross {
     opacity: 1;
     transition: all 1s;
 }
 
 .bayanBlock:hover {
     cursor: pointer 
-}
+}*/
 
 .radio-toolbar label {
     display: flex;
@@ -33,7 +33,7 @@ body {
     color: red;
 }
 
-.radio-toolbar input[type="radio"]:hover+label .spanchbob {
+/*.radio-toolbar input[type="radio"]:hover+label .spanchbob {
     display: block;
 }
 
@@ -43,7 +43,7 @@ body {
 
 .radio-toolbar input[type="radio"]:hover+label .cat {
     display: block;
-}
+}*/
 
 .radio-toolbar input[type="radio"]:checked+label .spanchbob {
     display: block;
@@ -121,9 +121,9 @@ label {
     opacity: 0;
 }
 
-.plus_or_cross:hover {
+/*.plus_or_cross:hover {
     background-image: url('assets/png/plus.png');
-}
+}*/
 
 .plus_or_cross_active {
     display: block;
@@ -156,11 +156,36 @@ label {
     }
 }
 
-@media (hover: none) and (pointer: coarse) {
-   
+@media (hover) {
+
+    .bayanBlock:hover .plus_or_cross {
+        opacity: 1;
+        transition: all 1s;
+    }
+
+    .bayanBlock:hover {
+        cursor: pointer 
+    }
+
+    .radio-toolbar input[type="radio"]:hover+label .spanchbob {
+        display: block;
+    }
+    
+    .radio-toolbar input[type="radio"]:hover+label .crazyfrog {
+        display: block;
+    }
+    
+    .radio-toolbar input[type="radio"]:hover+label .cat {
+        display: block;
+    }
+
+    .plus_or_cross:hover {
+        background-image: url('assets/png/plus.png');
+    }
 }
 
 @keyframes imgAppearance {
     0% {opacity: 0;}
     100% {opacity: 1;}
 }
+
