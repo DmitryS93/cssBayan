@@ -1,0 +1,224 @@
+body {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+.bayanBlock {
+    display: flex;
+    flex-direction: column;
+    transition: all 1s;
+}
+
+/*.bayanBlock:hover .plus_or_cross {
+    opacity: 1;
+    transition: all 1s;
+}
+
+.bayanBlock:hover {
+    cursor: pointer 
+}*/
+
+.radio-toolbar label {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    border: 0.1em solid #DAD0FF;
+}
+.radio-toolbar input[type="radio"] {
+    display: none;
+}
+
+.radio-toolbar input[type="radio"]:active+label {
+    border: 0.1em solid red;
+    color: red;
+}
+
+/*.radio-toolbar input[type="radio"]:hover+label .spanchbob {
+    display: block;
+}
+
+.radio-toolbar input[type="radio"]:hover+label .crazyfrog {
+    display: block;
+}
+
+.radio-toolbar input[type="radio"]:hover+label .cat {
+    display: block;
+}*/
+
+.radio-toolbar input[type="radio"]:checked+label .spanchbob {
+    display: block;
+}
+
+.radio-toolbar input[type="radio"]:checked+label .crazyfrog {
+    display: block;
+}
+
+.radio-toolbar input[type="radio"]:checked+label .cat {
+    display: block;
+}
+
+.radio-toolbar input[type="radio"]:checked+label .plus_or_cross {
+    background-image: url('assets/png/plus.png');
+}
+
+.textblock {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+label {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.spanchbob {
+    display: none;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    align-self: center;
+    width: 55%;
+    animation-name: imgAppearance;
+    animation-duration: 2s;
+}
+
+.crazyfrog {
+    display: none;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    align-self: center;
+    width: 40%;
+    animation-name: imgAppearance;
+    animation-duration: 2s;
+}
+
+.cat {
+    display: none;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    align-self: center;
+    width: 35%;
+    animation-name: imgAppearance;
+    animation-duration: 2s;
+}
+
+.text {
+    font: bold 1.5em italic;
+    align-items: center;
+    width: 80%;
+}
+
+.plus_or_cross {
+    width: 2em;
+    height: 2em;
+    background-size: cover;
+    background-image: url(assets/png/cross.png);
+    align-self: center;
+    transition: all 0.5s;
+    opacity: 0;
+}
+
+/*.plus_or_cross:hover {
+    background-image: url('assets/png/plus.png');
+}*/
+
+.plus_or_cross_active {
+    display: block;
+}
+
+@media (width < 500px) {
+
+    h1 {
+        font-size: 1em;
+    }
+
+    .text {
+        font: bold 0.75em italic;
+    }
+
+    .cat {
+        width: 80%;
+    }
+    .crazyfrog {
+        width: 80%;
+    }
+    .spanchbob {
+        width: 100%;
+    }
+}
+
+@media (width >= 500px) and (width <= 820px) {
+
+    .cat {
+        width: 80%;
+    }
+    .crazyfrog {
+        width: 80%;
+    }
+    .spanchbob {
+        width: 100%;
+    }
+}
+
+@media (width > 1024px) {
+
+    h1 {
+        font-size: 5em;
+    }
+
+    .text {
+        font: bold 2.5em italic;
+    }
+
+    .plus_or_cross {
+        width: 4em;
+        height: 4em;
+    }
+}
+
+@media (hover: none) {
+    .plus_or_cross {
+        opacity: 1;
+    }
+}
+
+@media (hover: hover) {
+
+    .bayanBlock:hover .plus_or_cross {
+        opacity: 1;
+        transition: all 1s;
+    }
+
+    .bayanBlock:hover {
+        cursor: pointer 
+    }
+
+    .radio-toolbar input[type="radio"]:hover+label .spanchbob {
+        display: block;
+    }
+    
+    .radio-toolbar input[type="radio"]:hover+label .crazyfrog {
+        display: block;
+    }
+    
+    .radio-toolbar input[type="radio"]:hover+label .cat {
+        display: block;
+    }
+
+    .plus_or_cross:hover {
+        background-image: url('assets/png/plus.png');
+    }
+}
+
+@keyframes imgAppearance {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
