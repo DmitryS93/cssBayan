@@ -3,6 +3,10 @@ body {
     margin-right: 10%;
 }
 
+h1 {
+    font-size: 3em;
+}
+
 .bayanBlock {
     display: flex;
     flex-direction: column;
@@ -106,7 +110,7 @@ label {
 }
 
 .text {
-    font: bold 1em italic;
+    font: bold 1.5em italic;
     align-items: center;
     width: 80%;
 }
@@ -136,23 +140,52 @@ label {
     }
 
     .text {
-        font: bold 0.5em italic;
+        font: bold 0.75em italic;
+    }
+
+    .cat {
+        width: 80%;
+    }
+    .crazyfrog {
+        width: 80%;
+    }
+    .spanchbob {
+        width: 80%;
+    }
+}
+
+@media (width >= 500px) and (width <= 820px) {
+
+    .cat {
+        width: 80%;
+    }
+    .crazyfrog {
+        width: 80%;
+    }
+    .spanchbob {
+        width: 80%;
     }
 }
 
 @media (width > 1024px) {
 
     h1 {
-        font-size: 3em;
+        font-size: 5em;
     }
 
     .text {
-        font: bold 2em italic;
+        font: bold 2.5em italic;
     }
 
     .plus_or_cross {
         width: 4em;
         height: 4em;
+    }
+}
+
+@media (hover: none) {
+    .plus_or_cross {
+        opacity: 1;
     }
 }
 
